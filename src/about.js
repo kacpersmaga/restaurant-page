@@ -7,8 +7,7 @@ export const createAboutUs = () =>{
     aboutDesc.textContent = "Welcome to Bella Tavola, where every meal is a celebration of Italian tradition and family. Nestled in the heart of [City], our restaurant is a tribute to the rich culinary heritage of Italy. Our menu features classic dishes made from age-old recipes passed down through generations."
     aboutUsDiv.id = "about-us";
 
-    aboutUsDiv.appendChild(aboutHeader);
-    aboutUsDiv.appendChild(aboutDesc);
+    aboutUsDiv.append(aboutHeader, aboutDesc);
 
     return aboutUsDiv;
 }

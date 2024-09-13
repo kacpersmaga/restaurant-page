@@ -46,9 +46,7 @@ export const createMenu = () => {
         wine.textContent = item.wine;
         mealName.id = "meal-name";
 
-        menuItem.appendChild(mealName);
-        menuItem.appendChild(ingredients);
-        menuItem.appendChild(wine);
+        menuItem.append(mealName, ingredients, wine);
         menuDiv.appendChild(menuItem);
     });
 

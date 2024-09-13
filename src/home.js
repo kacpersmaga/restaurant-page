@@ -9,33 +9,23 @@ export const createHome = () => {
     restaurantName.textContent = 'Bella Tavola';
   
     // Append heading elements to the content element
-    homeContainer.appendChild(nameIntro);
-    homeContainer.appendChild(restaurantName);
+    homeContainer.append(nameIntro, restaurantName);
     return homeContainer
   };
 
   export const createNav = () => {
     const nav = document.querySelector('nav');
+    const buttons = [
+      { id: 'home-button', text: 'Home' },
+      { id: 'menu-button', text: 'Menu' },
+      { id: 'about-button', text: 'About' }
+    ];
   
-   // Create button elements
-   const homeButton = document.createElement('button');
-   const menuButton = document.createElement('button');
-   const aboutButton = document.createElement('button');
- 
-   // Set button IDs (use element.id instead of setAttribute for simplicity)
-   homeButton.id = 'home-button';
-   menuButton.id = 'menu-button';
-   aboutButton.id = 'about-button';
-  
-    // Set button text content (optional)
-    homeButton.textContent = 'Home';
-    menuButton.textContent = 'Menu';
-    aboutButton.textContent = 'About';
-  
-    // Append buttons to the nav element
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(aboutButton);
-
+    buttons.forEach(({ id, text }) => {
+      const button = document.createElement('button');
+      button.id = id;
+      button.textContent = text;
+      nav.appendChild(button);
+    });
   };
 
