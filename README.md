@@ -46,6 +46,11 @@ The `taskUI.js` file includes an extra feature for task management that demonstr
 - **Task Completion**: Users can mark tasks as completed, and the UI updates accordingly.
 - **Task Filtering**: Includes filtering options for "All Tasks," "Today's Tasks," and "Completed Tasks."
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/62725dae-68fd-4a24-bae2-dfb49f8ecc1e)
+
+
 ## Technologies Used
 
 - **JavaScript (ES6+)**: Main programming language used.
