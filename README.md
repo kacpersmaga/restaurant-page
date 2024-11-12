@@ -62,7 +62,7 @@ The `taskUI.js` file includes an extra feature for task management that demonstr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/restaurant-page.git
+   git clone https://github.com/to-do/restaurant-page.git
    cd restaurant-page
    ```
 
